@@ -1,4 +1,4 @@
-🤖 基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
+🤖 项目名称：基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
 
 🎯 业务痛点与解决方案
 ### 1. 离线知识流：MD5 内容指纹防膨胀
