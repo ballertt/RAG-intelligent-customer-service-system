@@ -1,4 +1,4 @@
-<img width="789" height="569" alt="image" src="https://github.com/user-attachments/assets/b44a49aa-8bae-4b5f-97d4-17af9084b22d" />## 🤖 项目名称：基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
+## 🤖 项目名称：基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
 
 ## 🎯 业务痛点与解决方案
 ### 1. 离线知识流：MD5 内容指纹防膨胀
@@ -49,6 +49,6 @@ streamlit run app_qa.py
 * **RecursiveCharacterTextSplitter**: LangChain 智能文本切片器
 * **Hashlib (MD5)**: 内容指纹校验，实现知识库零冗余拦截
 
-##📸项目截图（Screenshots）
+## 📸项目截图（Screenshots）
 <img width="909" height="518" alt="image" src="https://github.com/user-attachments/assets/a0423f69-d136-4576-9c67-977b1285314e" />
 
