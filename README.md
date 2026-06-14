@@ -16,9 +16,9 @@
 
 ## 🚀 快速开始
 ### 1. 克隆项目与环境准备
-git clone [https://github.com/你的用户名/你的仓库名.git]
-cd 你的仓库名
-pip install -r requirements.txt
+(1).git clone [https://github.com/你的用户名/你的仓库名.git]
+(2).cd 你的仓库名
+(3).pip install -r requirements.txt
 (注：依赖主要包括 streamlit, langchain, langchain-chroma, dashscope 等)
 ### 2. 配置环境变量
 在系统环境或项目根目录下配置你的阿里百炼平台 API Key：
