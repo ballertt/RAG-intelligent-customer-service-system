@@ -1,6 +1,6 @@
-🤖 项目名称：基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
+## 🤖 项目名称：基于 LangChain + Qwen3-Max 的电商智能客服与 RAG 尺码推荐系统
 
-🎯 业务痛点与解决方案
+## 🎯 业务痛点与解决方案
 ### 1. 离线知识流：MD5 内容指纹防膨胀
 * **痛点**：商家频繁上传、更新相同或微调的尺码文档，导致向量数据库（Chroma）产生大量垃圾分块，检索命中率下降。
 * **解法**：引入 hashlib.md5 指纹层。文档进入清洗器前，计算全文本哈希值并动态维护本地 md5.text 清单。遇到重复内容直接执行 [跳过] ，**从源头过滤了 100% 的冗余向量计算与存储空间**。
@@ -17,23 +17,23 @@
 * **痛点**：长会话在高并发下状态极易丢失，而原生存储组件在处理 Pydantic 消息模型时常因底层解包引发元组报错崩溃。
 * **解法**：通过复写重构 BaseChatMessageHistory 的批量 add_messages 接口，隔离了序列化过程中的元组拆解 bug，实现会话以轻量化 JSON 树稳定持久化于本地本地 chat_history/。
 
-🚀 快速开始
-1. 克隆项目与环境准备
-git clone [https://github.com/你的用户名/你的仓库名.git](https://github.com/你的用户名/你的仓库名.git)
-cd 你的仓库名
-pip install -r requirements.txt
+## 🚀 快速开始
+### 1. 克隆项目与环境准备
+git clone [https://github.com/你的用户名/你的仓库名.git]
+      (https://github.com/你的用户名/你的仓库名.git)      cd 你的仓库名
+      pip install -r requirements.txt
 (注：依赖主要包括 streamlit, langchain, langchain-chroma, dashscope 等)
-2. 配置环境变量
+### 2. 配置环境变量
 在系统环境或项目根目录下配置你的阿里百炼平台 API Key：
 export DASHSCOPE_API_KEY="your-api-key-here"
-3. 运行离线知识库上传端
+### 3. 运行离线知识库上传端
 streamlit run app_file_uploader.py
 打开浏览器显示的网页，上传您的尺码规范或业务指南 TXT 文件，提示 [成功]内容已经成功载入向量库。
-4. 启动智能客服对话端
+### 4. 启动智能客服对话端
 streamlit run app_qa.py
 现在您可以向您的智能导购发起多轮对话测试了！
-## 🛠️ 技术栈 (Tech Stack)
 
+## 🛠️ 技术栈 (Tech Stack)
 **前端与交互层 (Frontend & UI)**
 * ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white) 核心 Web 框架，实现双端（知识库管理 + 智能问答）流式交互
 * **Generator (生成器)**: Python 原生特性，处理流式 Token 渲染防阻塞
