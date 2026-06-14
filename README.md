@@ -34,10 +34,12 @@ streamlit run app_qa.py
 **前端与交互层 (Frontend & UI)**
 * ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white) 核心 Web 框架，实现双端（知识库管理 + 智能问答）流式交互
 * **Generator (生成器)**: Python 原生特性，处理流式 Token 渲染防阻塞
+
 **AI 与大模型编排层 (AI & Orchestration)**
 * ![LangChain](https://img.shields.io/badge/LangChain-FFFFFF?style=flat-square&logo=langchain&logoColor=black) 核心应用框架，采用 **LCEL (LangChain Expression Language)** 进行链式编排
 * **Qwen3-Max (通义千问)**: 核心对话大语言模型（LLM），负责意图理解与内容生成
 * **DashScope Embeddings (text-embedding-v4)**: 阿里百炼文本向量化模型
+
 **数据与存储层 (Data & Storage)**
 * ![Chroma](https://img.shields.io/badge/ChromaDB-F37F58?style=flat-square) 本地轻量级向量数据库，用于高维语义检索
 * **SQLite3**: 存储 Chroma 文档元数据（Metadata）
@@ -47,5 +49,6 @@ streamlit run app_qa.py
 * **RecursiveCharacterTextSplitter**: LangChain 智能文本切片器
 * **Hashlib (MD5)**: 内容指纹校验，实现知识库零冗余拦截
 
-**项目截图（Screenshots）**
-<img width="789" height="569" alt="image" src="https://github.com/user-attachments/assets/7539b780-e3d9-4947-ab0b-573a65cd5a40" />
+##📸项目截图（Screenshots）
+<img width="909" height="518" alt="image" src="https://github.com/user-attachments/assets/a0423f69-d136-4576-9c67-977b1285314e" />
+
