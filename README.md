@@ -50,5 +50,6 @@ streamlit run app_qa.py
 * **Hashlib (MD5)**: 内容指纹校验，实现知识库零冗余拦截
 
 ## 📸项目截图（Screenshots）
-<img width="909" height="518" alt="image" src="https://github.com/user-attachments/assets/a0423f69-d136-4576-9c67-977b1285314e" />
+<img width="798" height="631" alt="image" src="https://github.com/user-attachments/assets/05a36b63-d6ba-46ba-8bb2-456e1f42d720" />
+
 
